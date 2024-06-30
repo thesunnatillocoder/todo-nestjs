@@ -4,8 +4,15 @@ meta {
   seq: 2
 }
 
-get {
-  url: http://localhost:3000/todos/ping
-  body: none
+post {
+  url: http://localhost:3000/todos/create
+  body: json
   auth: none
+}
+
+body:json {
+  {
+    "title": "",
+    "desc": "desc2"
+  }
 }
